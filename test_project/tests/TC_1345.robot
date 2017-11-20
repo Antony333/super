@@ -4,6 +4,7 @@ Documentation   C1345: Create, update, send draft, delete and delete from trash
 Library    ../steps/UserDraftsSteps.py
 Library    ../steps/UsersMessagesSteps.py
 
+Test Timeout  15 min
 
 *** Variables ***
 ${user_id}     qacalendarapi@gmail.com

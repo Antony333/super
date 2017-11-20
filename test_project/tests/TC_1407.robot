@@ -4,6 +4,7 @@ Documentation    C1407: Create a message, add and return from spam, delete the m
 Library  ../steps/ThreadsSteps.py
 Library  ../steps/UsersMessagesSteps.py
 Variables  ../configurations/gmail_data.py
+Test Timeout  15 min
 
 *** Test Cases ***
 Modify Messages Labels In Thread

@@ -4,6 +4,7 @@ Documentation    C1380: Create, modify, delete the message and check to a thread
 Library    ../steps/ThreadsSteps.py
 Library    ../steps/UsersMessagesSteps.py
 
+Test Timeout  15 min
 
 *** Variables ***
 ${user_id}  qacalendarapi@gmail.com

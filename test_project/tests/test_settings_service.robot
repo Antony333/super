@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    Suite description
 Library  ../steps/SettingsSteps.py
+Test Timeout  15 min
 
 *** Test Cases ***
 Test Settings get

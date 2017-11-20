@@ -4,6 +4,7 @@ Documentation    C1390: Changing messages count in profile
 Library  ../steps/UsersSteps.py
 Library  ../steps/UsersMessagesSteps.py
 
+Test Timeout  15 min
 
 *** Variables ***
 ${user_id}                   qacalendarapi@gmail.com

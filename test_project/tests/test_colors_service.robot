@@ -2,6 +2,7 @@
 Documentation  Suite description
 Library  ../steps/ColorSteps.py
 
+Test Timeout  15 min
 
 *** Test Cases ***
 Test colors service

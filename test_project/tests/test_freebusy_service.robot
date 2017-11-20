@@ -1,6 +1,7 @@
 *** Settings ***
 Documentation    Test FreeBusy service in the google calendar api
 Library  ../steps/FreeBusyStep.py
+Test Timeout  15 min
 
 *** Variables ***
 ${time_min}     2017-04-26T00:00:01+00:00

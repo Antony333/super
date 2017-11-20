@@ -1,6 +1,9 @@
 *** Settings ***
 Documentation    This Suite tests the ACL service...
 Library  ../steps/AclStep.py
+
+Test Timeout  15 min
+
 *** Variables ***
 # insert
 ${role}           reader

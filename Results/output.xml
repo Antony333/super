@@ -1,224 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20171114 16:50:50.661" generator="Robot 3.0.1 (Python 2.7.13 on win32)">
-<suite source="C:\Users\a.mishchenko\Desktop\google-calendar-api\google-calendar-api-master-d2fdfbf1eb31f35b97d576d1a6d281136674b689\test_project\tests\TC_1362.robot" id="s1" name="TC 1362">
-<test id="s1-t1" name="Test Settings Filters Service">
-<kw name="Create Random Label Model" library="LabelsSteps">
-<doc>:return: (LabelModel) model</doc>
-<assign>
-<var>${random_label_model}</var>
-</assign>
-<msg timestamp="20171114 16:50:57.496" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20171114 16:50:57.563" level="INFO">::[LabelModel.py =&gt; create_label_model, line: 39]:: 
-https://qa-gitlab.demohoster.com/self-education/google-calendar-api/tree/master/test_project\models\LabelModel.py#L39
- [Users.labels]: Creating label model...</msg>
-<msg timestamp="20171114 16:50:57.586" level="INFO">::[LabelModel.py =&gt; create_label_model, line: 43]:: 
-https://qa-gitlab.demohoster.com/self-education/google-calendar-api/tree/master/test_project\models\LabelModel.py#L43
- Model has created 
-{
-    "label_id": null, 
-    "label_list_visibility": "labelHide", 
-    "message_list_visibility": "show", 
-    "name": "907834dd"
-}</msg>
-<msg timestamp="20171114 16:50:57.587" level="TRACE">Return: &lt;test_project.models.LabelModel.LabelModel object at 0x04742210&gt;</msg>
-<msg timestamp="20171114 16:50:57.587" level="INFO">${random_label_model} = {
-    "label_id": null, 
-    "label_list_visibility": "labelHide", 
-    "message_list_visibility": "show", 
-    "name": "907834dd"
-}</msg>
-<status status="PASS" endtime="20171114 16:50:57.587" starttime="20171114 16:50:57.496"></status>
+<robot generated="20171120 15:25:42.172" generator="Robot 3.0.1 (Python 2.7.13 on win32)">
+<suite source="C:\Users\a.mishchenko\Desktop\google-calendar-api\google-calendar-api-master-d2fdfbf1eb31f35b97d576d1a6d281136674b689\test_project\tests\TC_1344.robot" id="s1" name="TC 1344">
+<test id="s1-t1" name="Test C1344">
+<kw type="setup" name="15 min">
+<msg timestamp="20171120 15:25:50.367" level="FAIL">No keyword with name '15 min' found.</msg>
+<status status="FAIL" endtime="20171120 15:25:50.367" starttime="20171120 15:25:50.366"></status>
 </kw>
-<kw name="Create Label" library="LabelsSteps">
-<doc>Creates a new label.</doc>
-<arguments>
-<arg>${user_id}</arg>
-<arg>${random_label_model}</arg>
-</arguments>
-<assign>
-<var>${response_label_model}</var>
-</assign>
-<msg timestamp="20171114 16:50:57.587" level="TRACE">Arguments: [ 'qacalendarapi@gmail.com' | &lt;test_project.models.LabelModel.LabelModel object at 0x04742210&gt; ]</msg>
-<msg timestamp="20171114 16:50:57.594" level="INFO">::[LabelsApi.py =&gt; create, line: 22]:: 
-https://qa-gitlab.demohoster.com/self-education/google-calendar-api/tree/master/test_project\api_call_builders\LabelsApi.py#L22
- [Users.labels]: Creates a new label with body: 
-{
-    "label_id": null, 
-    "label_list_visibility": "labelHide", 
-    "message_list_visibility": "show", 
-    "name": "907834dd"
-}</msg>
-<msg timestamp="20171114 16:50:57.679" level="DEBUG">Starting new HTTPS connection (1): accounts.google.com</msg>
-<msg timestamp="20171114 16:50:58.620" level="DEBUG">https://accounts.google.com:443 "GET /o/oauth2/auth?scope=+https%3A%2F%2Fmail.google.com%2F+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.modify+https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fgmail.labels&amp;redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob&amp;response_type=code&amp;client_id=355336847962-rqnjsi4jvtnvcnqr46s105vhmlgjhn7d.apps.googleusercontent.com HTTP/1.1" 302 0</msg>
-<msg timestamp="20171114 16:51:04.216" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session {"capabilities": {"alwaysMatch": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}, "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}</msg>
-<msg timestamp="20171114 16:51:04.233" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:04.233" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session/db4b5020-c942-11e7-a80d-433c8a305295/timeouts/implicit_wait {"sessionId": "db4b5020-c942-11e7-a80d-433c8a305295", "ms": 10000.0}</msg>
-<msg timestamp="20171114 16:51:04.239" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:04.239" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session/db4b5020-c942-11e7-a80d-433c8a305295/url {"url": "https://accounts.google.com/ServiceLogin?passive=1209600&amp;continue=https://accounts.google.com/o/oauth2/auth?scope%3D%2Bhttps://mail.google.com/%2Bhttps://www.googleapis.com/auth/gmail.modify%2Bhttps://www.googleapis.com/auth/gmail.labels%26redirect_uri%3Durn:ietf:wg:oauth:2.0:oob%26response_type%3Dcode%26client_id%3D355336847962-rqnjsi4jvtnvcnqr46s105vhmlgjhn7d.apps.googleusercontent.com%26from_login%3D1%26as%3D7c01eeb86a8e4300&amp;ltmpl=embedded&amp;oauth=1&amp;sarp=1&amp;scc=1", "sessionId": "db4b5020-c942-11e7-a80d-433c8a305295"}</msg>
-<msg timestamp="20171114 16:51:04.840" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:04.840" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session/db4b5020-c942-11e7-a80d-433c8a305295/element {"using": "id", "sessionId": "db4b5020-c942-11e7-a80d-433c8a305295", "value": "Email"}</msg>
-<msg timestamp="20171114 16:51:04.855" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:04.855" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session/db4b5020-c942-11e7-a80d-433c8a305295/element/:wdc:1510667464854/value {"text": "qacalendarapi@gmail.com", "sessionId": "db4b5020-c942-11e7-a80d-433c8a305295", "id": ":wdc:1510667464854", "value": ["q", "a", "c", "a", "l", "e", "n", "d", "a", "r", "a", "p", "i", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"]}</msg>
-<msg timestamp="20171114 16:51:04.931" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:04.931" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session/db4b5020-c942-11e7-a80d-433c8a305295/element {"using": "id", "sessionId": "db4b5020-c942-11e7-a80d-433c8a305295", "value": "next"}</msg>
-<msg timestamp="20171114 16:51:04.947" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:04.948" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session/db4b5020-c942-11e7-a80d-433c8a305295/element/:wdc:1510667464855/click {"sessionId": "db4b5020-c942-11e7-a80d-433c8a305295", "id": ":wdc:1510667464855"}</msg>
-<msg timestamp="20171114 16:51:05.006" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:07.007" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session/db4b5020-c942-11e7-a80d-433c8a305295/element {"using": "id", "sessionId": "db4b5020-c942-11e7-a80d-433c8a305295", "value": "Passwd"}</msg>
-<msg timestamp="20171114 16:51:07.020" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:07.020" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session/db4b5020-c942-11e7-a80d-433c8a305295/element/:wdc:1510667464856/value {"text": "qwerty321", "sessionId": "db4b5020-c942-11e7-a80d-433c8a305295", "id": ":wdc:1510667464856", "value": ["q", "w", "e", "r", "t", "y", "3", "2", "1"]}</msg>
-<msg timestamp="20171114 16:51:07.075" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:07.076" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session/db4b5020-c942-11e7-a80d-433c8a305295/element {"using": "id", "sessionId": "db4b5020-c942-11e7-a80d-433c8a305295", "value": "signIn"}</msg>
-<msg timestamp="20171114 16:51:07.088" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:07.088" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session/db4b5020-c942-11e7-a80d-433c8a305295/element/:wdc:1510667464857/click {"sessionId": "db4b5020-c942-11e7-a80d-433c8a305295", "id": ":wdc:1510667464857"}</msg>
-<msg timestamp="20171114 16:51:07.535" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:09.536" level="DEBUG">POST http://127.0.0.1:54067/wd/hub/session/db4b5020-c942-11e7-a80d-433c8a305295/element {"using": "id", "sessionId": "db4b5020-c942-11e7-a80d-433c8a305295", "value": "submit_approve_access"}</msg>
-<msg timestamp="20171114 16:51:19.684" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:24.734" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session {"capabilities": {"alwaysMatch": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}, "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}</msg>
-<msg timestamp="20171114 16:51:24.749" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:24.750" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session/e785ce60-c942-11e7-9908-37e39a99f5f3/timeouts/implicit_wait {"sessionId": "e785ce60-c942-11e7-9908-37e39a99f5f3", "ms": 10000.0}</msg>
-<msg timestamp="20171114 16:51:24.755" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:24.755" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session/e785ce60-c942-11e7-9908-37e39a99f5f3/url {"url": "https://accounts.google.com/ServiceLogin?passive=1209600&amp;continue=https://accounts.google.com/o/oauth2/auth?scope%3D%2Bhttps://mail.google.com/%2Bhttps://www.googleapis.com/auth/gmail.modify%2Bhttps://www.googleapis.com/auth/gmail.labels%26redirect_uri%3Durn:ietf:wg:oauth:2.0:oob%26response_type%3Dcode%26client_id%3D355336847962-rqnjsi4jvtnvcnqr46s105vhmlgjhn7d.apps.googleusercontent.com%26from_login%3D1%26as%3D7c01eeb86a8e4300&amp;ltmpl=embedded&amp;oauth=1&amp;sarp=1&amp;scc=1", "sessionId": "e785ce60-c942-11e7-9908-37e39a99f5f3"}</msg>
-<msg timestamp="20171114 16:51:25.295" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:25.296" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session/e785ce60-c942-11e7-9908-37e39a99f5f3/element {"using": "id", "sessionId": "e785ce60-c942-11e7-9908-37e39a99f5f3", "value": "Email"}</msg>
-<msg timestamp="20171114 16:51:25.310" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:25.311" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session/e785ce60-c942-11e7-9908-37e39a99f5f3/element/:wdc:1510667485309/value {"text": "qacalendarapi@gmail.com", "sessionId": "e785ce60-c942-11e7-9908-37e39a99f5f3", "id": ":wdc:1510667485309", "value": ["q", "a", "c", "a", "l", "e", "n", "d", "a", "r", "a", "p", "i", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"]}</msg>
-<msg timestamp="20171114 16:51:25.374" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:25.374" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session/e785ce60-c942-11e7-9908-37e39a99f5f3/element {"using": "id", "sessionId": "e785ce60-c942-11e7-9908-37e39a99f5f3", "value": "next"}</msg>
-<msg timestamp="20171114 16:51:25.387" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:25.387" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session/e785ce60-c942-11e7-9908-37e39a99f5f3/element/:wdc:1510667485310/click {"sessionId": "e785ce60-c942-11e7-9908-37e39a99f5f3", "id": ":wdc:1510667485310"}</msg>
-<msg timestamp="20171114 16:51:25.446" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:27.446" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session/e785ce60-c942-11e7-9908-37e39a99f5f3/element {"using": "id", "sessionId": "e785ce60-c942-11e7-9908-37e39a99f5f3", "value": "Passwd"}</msg>
-<msg timestamp="20171114 16:51:27.459" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:27.459" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session/e785ce60-c942-11e7-9908-37e39a99f5f3/element/:wdc:1510667485311/value {"text": "qwerty321", "sessionId": "e785ce60-c942-11e7-9908-37e39a99f5f3", "id": ":wdc:1510667485311", "value": ["q", "w", "e", "r", "t", "y", "3", "2", "1"]}</msg>
-<msg timestamp="20171114 16:51:27.515" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:27.515" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session/e785ce60-c942-11e7-9908-37e39a99f5f3/element {"using": "id", "sessionId": "e785ce60-c942-11e7-9908-37e39a99f5f3", "value": "signIn"}</msg>
-<msg timestamp="20171114 16:51:27.527" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:27.527" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session/e785ce60-c942-11e7-9908-37e39a99f5f3/element/:wdc:1510667485312/click {"sessionId": "e785ce60-c942-11e7-9908-37e39a99f5f3", "id": ":wdc:1510667485312"}</msg>
-<msg timestamp="20171114 16:51:28.024" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:30.025" level="DEBUG">POST http://127.0.0.1:54093/wd/hub/session/e785ce60-c942-11e7-9908-37e39a99f5f3/element {"using": "id", "sessionId": "e785ce60-c942-11e7-9908-37e39a99f5f3", "value": "submit_approve_access"}</msg>
-<msg timestamp="20171114 16:51:40.143" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:45.181" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session {"capabilities": {"alwaysMatch": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}, "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}</msg>
-<msg timestamp="20171114 16:51:45.197" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:45.197" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session/f3b5c550-c942-11e7-93fe-b7058cac3c45/timeouts/implicit_wait {"sessionId": "f3b5c550-c942-11e7-93fe-b7058cac3c45", "ms": 10000.0}</msg>
-<msg timestamp="20171114 16:51:45.202" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:45.203" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session/f3b5c550-c942-11e7-93fe-b7058cac3c45/url {"url": "https://accounts.google.com/ServiceLogin?passive=1209600&amp;continue=https://accounts.google.com/o/oauth2/auth?scope%3D%2Bhttps://mail.google.com/%2Bhttps://www.googleapis.com/auth/gmail.modify%2Bhttps://www.googleapis.com/auth/gmail.labels%26redirect_uri%3Durn:ietf:wg:oauth:2.0:oob%26response_type%3Dcode%26client_id%3D355336847962-rqnjsi4jvtnvcnqr46s105vhmlgjhn7d.apps.googleusercontent.com%26from_login%3D1%26as%3D7c01eeb86a8e4300&amp;ltmpl=embedded&amp;oauth=1&amp;sarp=1&amp;scc=1", "sessionId": "f3b5c550-c942-11e7-93fe-b7058cac3c45"}</msg>
-<msg timestamp="20171114 16:51:45.769" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:45.770" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session/f3b5c550-c942-11e7-93fe-b7058cac3c45/element {"using": "id", "sessionId": "f3b5c550-c942-11e7-93fe-b7058cac3c45", "value": "Email"}</msg>
-<msg timestamp="20171114 16:51:45.784" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:45.784" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session/f3b5c550-c942-11e7-93fe-b7058cac3c45/element/:wdc:1510667505782/value {"text": "qacalendarapi@gmail.com", "sessionId": "f3b5c550-c942-11e7-93fe-b7058cac3c45", "id": ":wdc:1510667505782", "value": ["q", "a", "c", "a", "l", "e", "n", "d", "a", "r", "a", "p", "i", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"]}</msg>
-<msg timestamp="20171114 16:51:45.853" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:45.853" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session/f3b5c550-c942-11e7-93fe-b7058cac3c45/element {"using": "id", "sessionId": "f3b5c550-c942-11e7-93fe-b7058cac3c45", "value": "next"}</msg>
-<msg timestamp="20171114 16:51:45.873" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:45.873" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session/f3b5c550-c942-11e7-93fe-b7058cac3c45/element/:wdc:1510667505783/click {"sessionId": "f3b5c550-c942-11e7-93fe-b7058cac3c45", "id": ":wdc:1510667505783"}</msg>
-<msg timestamp="20171114 16:51:45.955" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:47.956" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session/f3b5c550-c942-11e7-93fe-b7058cac3c45/element {"using": "id", "sessionId": "f3b5c550-c942-11e7-93fe-b7058cac3c45", "value": "Passwd"}</msg>
-<msg timestamp="20171114 16:51:47.969" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:47.969" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session/f3b5c550-c942-11e7-93fe-b7058cac3c45/element/:wdc:1510667505784/value {"text": "qwerty321", "sessionId": "f3b5c550-c942-11e7-93fe-b7058cac3c45", "id": ":wdc:1510667505784", "value": ["q", "w", "e", "r", "t", "y", "3", "2", "1"]}</msg>
-<msg timestamp="20171114 16:51:48.025" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:48.025" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session/f3b5c550-c942-11e7-93fe-b7058cac3c45/element {"using": "id", "sessionId": "f3b5c550-c942-11e7-93fe-b7058cac3c45", "value": "signIn"}</msg>
-<msg timestamp="20171114 16:51:48.038" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:48.038" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session/f3b5c550-c942-11e7-93fe-b7058cac3c45/element/:wdc:1510667505785/click {"sessionId": "f3b5c550-c942-11e7-93fe-b7058cac3c45", "id": ":wdc:1510667505785"}</msg>
-<msg timestamp="20171114 16:51:48.512" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:51:50.513" level="DEBUG">POST http://127.0.0.1:54122/wd/hub/session/f3b5c550-c942-11e7-93fe-b7058cac3c45/element {"using": "id", "sessionId": "f3b5c550-c942-11e7-93fe-b7058cac3c45", "value": "submit_approve_access"}</msg>
-<msg timestamp="20171114 16:52:00.601" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:05.638" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session {"capabilities": {"alwaysMatch": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}, "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}</msg>
-<msg timestamp="20171114 16:52:05.654" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:05.654" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session/ffe769f0-c942-11e7-9301-3f15bb1f8cca/timeouts/implicit_wait {"sessionId": "ffe769f0-c942-11e7-9301-3f15bb1f8cca", "ms": 10000.0}</msg>
-<msg timestamp="20171114 16:52:05.660" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:05.661" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session/ffe769f0-c942-11e7-9301-3f15bb1f8cca/url {"url": "https://accounts.google.com/ServiceLogin?passive=1209600&amp;continue=https://accounts.google.com/o/oauth2/auth?scope%3D%2Bhttps://mail.google.com/%2Bhttps://www.googleapis.com/auth/gmail.modify%2Bhttps://www.googleapis.com/auth/gmail.labels%26redirect_uri%3Durn:ietf:wg:oauth:2.0:oob%26response_type%3Dcode%26client_id%3D355336847962-rqnjsi4jvtnvcnqr46s105vhmlgjhn7d.apps.googleusercontent.com%26from_login%3D1%26as%3D7c01eeb86a8e4300&amp;ltmpl=embedded&amp;oauth=1&amp;sarp=1&amp;scc=1", "sessionId": "ffe769f0-c942-11e7-9301-3f15bb1f8cca"}</msg>
-<msg timestamp="20171114 16:52:06.201" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:06.201" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session/ffe769f0-c942-11e7-9301-3f15bb1f8cca/element {"using": "id", "sessionId": "ffe769f0-c942-11e7-9301-3f15bb1f8cca", "value": "Email"}</msg>
-<msg timestamp="20171114 16:52:06.216" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:06.216" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session/ffe769f0-c942-11e7-9301-3f15bb1f8cca/element/:wdc:1510667526214/value {"text": "qacalendarapi@gmail.com", "sessionId": "ffe769f0-c942-11e7-9301-3f15bb1f8cca", "id": ":wdc:1510667526214", "value": ["q", "a", "c", "a", "l", "e", "n", "d", "a", "r", "a", "p", "i", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"]}</msg>
-<msg timestamp="20171114 16:52:06.280" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:06.280" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session/ffe769f0-c942-11e7-9301-3f15bb1f8cca/element {"using": "id", "sessionId": "ffe769f0-c942-11e7-9301-3f15bb1f8cca", "value": "next"}</msg>
-<msg timestamp="20171114 16:52:06.292" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:06.293" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session/ffe769f0-c942-11e7-9301-3f15bb1f8cca/element/:wdc:1510667526215/click {"sessionId": "ffe769f0-c942-11e7-9301-3f15bb1f8cca", "id": ":wdc:1510667526215"}</msg>
-<msg timestamp="20171114 16:52:06.348" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:08.349" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session/ffe769f0-c942-11e7-9301-3f15bb1f8cca/element {"using": "id", "sessionId": "ffe769f0-c942-11e7-9301-3f15bb1f8cca", "value": "Passwd"}</msg>
-<msg timestamp="20171114 16:52:08.369" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:08.370" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session/ffe769f0-c942-11e7-9301-3f15bb1f8cca/element/:wdc:1510667526216/value {"text": "qwerty321", "sessionId": "ffe769f0-c942-11e7-9301-3f15bb1f8cca", "id": ":wdc:1510667526216", "value": ["q", "w", "e", "r", "t", "y", "3", "2", "1"]}</msg>
-<msg timestamp="20171114 16:52:08.456" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:08.456" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session/ffe769f0-c942-11e7-9301-3f15bb1f8cca/element {"using": "id", "sessionId": "ffe769f0-c942-11e7-9301-3f15bb1f8cca", "value": "signIn"}</msg>
-<msg timestamp="20171114 16:52:08.468" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:08.469" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session/ffe769f0-c942-11e7-9301-3f15bb1f8cca/element/:wdc:1510667526217/click {"sessionId": "ffe769f0-c942-11e7-9301-3f15bb1f8cca", "id": ":wdc:1510667526217"}</msg>
-<msg timestamp="20171114 16:52:08.931" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:10.932" level="DEBUG">POST http://127.0.0.1:54148/wd/hub/session/ffe769f0-c942-11e7-9301-3f15bb1f8cca/element {"using": "id", "sessionId": "ffe769f0-c942-11e7-9301-3f15bb1f8cca", "value": "submit_approve_access"}</msg>
-<msg timestamp="20171114 16:52:21.050" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:23.587" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session {"capabilities": {"alwaysMatch": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}, "firstMatch": []}, "desiredCapabilities": {"platform": "ANY", "browserName": "phantomjs", "version": "", "javascriptEnabled": true}}</msg>
-<msg timestamp="20171114 16:52:23.602" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:23.603" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/timeouts/implicit_wait {"sessionId": "0a9a0fb0-c943-11e7-8960-f7d6db5d12b9", "ms": 10000.0}</msg>
-<msg timestamp="20171114 16:52:23.608" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:23.609" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/url {"url": "https://accounts.google.com/ServiceLogin?passive=1209600&amp;continue=https://accounts.google.com/o/oauth2/auth?scope%3D%2Bhttps://mail.google.com/%2Bhttps://www.googleapis.com/auth/gmail.modify%2Bhttps://www.googleapis.com/auth/gmail.labels%26redirect_uri%3Durn:ietf:wg:oauth:2.0:oob%26response_type%3Dcode%26client_id%3D355336847962-rqnjsi4jvtnvcnqr46s105vhmlgjhn7d.apps.googleusercontent.com%26from_login%3D1%26as%3D7c01eeb86a8e4300&amp;ltmpl=embedded&amp;oauth=1&amp;sarp=1&amp;scc=1", "sessionId": "0a9a0fb0-c943-11e7-8960-f7d6db5d12b9"}</msg>
-<msg timestamp="20171114 16:52:24.169" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:24.169" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/element {"using": "id", "sessionId": "0a9a0fb0-c943-11e7-8960-f7d6db5d12b9", "value": "Email"}</msg>
-<msg timestamp="20171114 16:52:24.184" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:24.184" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/element/:wdc:1510667544182/value {"text": "qacalendarapi@gmail.com", "sessionId": "0a9a0fb0-c943-11e7-8960-f7d6db5d12b9", "id": ":wdc:1510667544182", "value": ["q", "a", "c", "a", "l", "e", "n", "d", "a", "r", "a", "p", "i", "@", "g", "m", "a", "i", "l", ".", "c", "o", "m"]}</msg>
-<msg timestamp="20171114 16:52:24.246" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:24.246" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/element {"using": "id", "sessionId": "0a9a0fb0-c943-11e7-8960-f7d6db5d12b9", "value": "next"}</msg>
-<msg timestamp="20171114 16:52:24.259" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:24.259" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/element/:wdc:1510667544183/click {"sessionId": "0a9a0fb0-c943-11e7-8960-f7d6db5d12b9", "id": ":wdc:1510667544183"}</msg>
-<msg timestamp="20171114 16:52:24.314" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:26.315" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/element {"using": "id", "sessionId": "0a9a0fb0-c943-11e7-8960-f7d6db5d12b9", "value": "Passwd"}</msg>
-<msg timestamp="20171114 16:52:26.328" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:26.328" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/element/:wdc:1510667544184/value {"text": "qwerty321", "sessionId": "0a9a0fb0-c943-11e7-8960-f7d6db5d12b9", "id": ":wdc:1510667544184", "value": ["q", "w", "e", "r", "t", "y", "3", "2", "1"]}</msg>
-<msg timestamp="20171114 16:52:26.411" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:26.411" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/element {"using": "id", "sessionId": "0a9a0fb0-c943-11e7-8960-f7d6db5d12b9", "value": "signIn"}</msg>
-<msg timestamp="20171114 16:52:26.431" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:26.431" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/element/:wdc:1510667544185/click {"sessionId": "0a9a0fb0-c943-11e7-8960-f7d6db5d12b9", "id": ":wdc:1510667544185"}</msg>
-<msg timestamp="20171114 16:52:26.991" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:28.991" level="DEBUG">POST http://127.0.0.1:54174/wd/hub/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/element {"using": "id", "sessionId": "0a9a0fb0-c943-11e7-8960-f7d6db5d12b9", "value": "submit_approve_access"}</msg>
-<msg timestamp="20171114 16:52:39.138" level="DEBUG">Finished Request</msg>
-<msg timestamp="20171114 16:52:39.142" level="FAIL">NoSuchElementException: Message: {"errorMessage":"Unable to find element with id 'submit_approve_access'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"102","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:54174","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"using\": \"id\", \"sessionId\": \"0a9a0fb0-c943-11e7-8960-f7d6db5d12b9\", \"value\": \"submit_approve_access\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/element"}}
-Screenshot: available via screen
-</msg>
-<msg timestamp="20171114 16:52:39.142" level="DEBUG">Traceback (most recent call last):
-  File "C:\Users\a.mishchenko\Desktop\google-calendar-api\google-calendar-api-master-d2fdfbf1eb31f35b97d576d1a6d281136674b689\test_project\steps\LabelsSteps.py", line 15, in create_label
-    response, model = LabelsApi().create(user_id, label_model)
-  File "test_project\api_call_builders\LabelsApi.py", line 33, in create
-    http.auth_to_google(client=client, scope=scope_labels)
-  File "framework\interface_drivers\http\HttpLib.py", line 20, in auth_to_google
-    token = AuthGoogle().add_auth_token_to_header(scope, client)
-  File "framework\interface_drivers\http\AuthGoogle.py", line 88, in add_auth_token_to_header
-    authorization_code = self._retrieve_authorization_code(scope, client)
-  File "C:\Portable_Env\Python27\lib\site-packages\pip\_vendor\retrying.py", line 49, in wrapped_f
-    return Retrying(*dargs, **dkw).call(f, *args, **kw)
-  File "C:\Portable_Env\Python27\lib\site-packages\pip\_vendor\retrying.py", line 206, in call
-    return attempt.get(self._wrap_exception)
-  File "C:\Portable_Env\Python27\lib\site-packages\pip\_vendor\retrying.py", line 247, in get
-    six.reraise(self.value[0], self.value[1], self.value[2])
-  File "C:\Portable_Env\Python27\lib\site-packages\pip\_vendor\retrying.py", line 200, in call
-    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
-  File "framework\interface_drivers\http\AuthGoogle.py", line 75, in _retrieve_authorization_code
-    return self._authorize_to_gacc_with_phantom_js(r.headers.get('location'), self._client)
-  File "C:\Portable_Env\Python27\lib\site-packages\pip\_vendor\retrying.py", line 49, in wrapped_f
-    return Retrying(*dargs, **dkw).call(f, *args, **kw)
-  File "C:\Portable_Env\Python27\lib\site-packages\pip\_vendor\retrying.py", line 212, in call
-    raise attempt.get()
-  File "C:\Portable_Env\Python27\lib\site-packages\pip\_vendor\retrying.py", line 247, in get
-    six.reraise(self.value[0], self.value[1], self.value[2])
-  File "C:\Portable_Env\Python27\lib\site-packages\pip\_vendor\retrying.py", line 200, in call
-    attempt = Attempt(fn(*args, **kwargs), attempt_number, False)
-  File "framework\interface_drivers\http\AuthGoogle.py", line 59, in _authorize_to_gacc_with_phantom_js
-    browser.find_element_by_id("submit_approve_access").click()
-  File "C:\Portable_Env\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 289, in find_element_by_id
-    return self.find_element(by=By.ID, value=id_)
-  File "C:\Portable_Env\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 791, in find_element
-    'value': value})['value']
-  File "C:\Portable_Env\Python27\lib\site-packages\selenium\webdriver\remote\webdriver.py", line 256, in execute
-    self.error_handler.check_response(response)
-  File "C:\Portable_Env\Python27\lib\site-packages\selenium\webdriver\remote\errorhandler.py", line 194, in check_response
-    raise exception_class(message, screen, stacktrace)</msg>
-<status status="FAIL" endtime="20171114 16:52:39.142" starttime="20171114 16:50:57.587"></status>
-</kw>
-<status status="FAIL" endtime="20171114 16:52:39.142" critical="yes" starttime="20171114 16:50:57.495">NoSuchElementException: Message: {"errorMessage":"Unable to find element with id 'submit_approve_access'","request":{"headers":{"Accept":"application/json","Accept-Encoding":"identity","Connection":"close","Content-Length":"102","Content-Type":"application/json;charset=UTF-8","Host":"127.0.0.1:54174","User-Agent":"Python http auth"},"httpVersion":"1.1","method":"POST","post":"{\"using\": \"id\", \"sessionId\": \"0a9a0fb0-c943-11e7-8960-f7d6db5d12b9\", \"value\": \"submit_approve_access\"}","url":"/element","urlParsed":{"anchor":"","query":"","file":"element","directory":"/","path":"/element","relative":"/element","port":"","host":"","password":"","user":"","userInfo":"","authority":"","protocol":"","source":"/element","queryKey":{},"chunks":["element"]},"urlOriginal":"/session/0a9a0fb0-c943-11e7-8960-f7d6db5d12b9/element"}}
-Screenshot: available via screen
-</status>
+<status status="FAIL" endtime="20171120 15:25:50.367" critical="yes" starttime="20171120 15:25:50.362">Setup failed:
+No keyword with name '15 min' found.</status>
 </test>
-<doc>C1362: Create, get, list, delete from settingsFilters
-https://testrail.a1qa.com/index.php?/cases/view/1362&amp;group_by=cases:section_id&amp;group_id=1295&amp;group_order=asc</doc>
-<status status="FAIL" endtime="20171114 16:52:39.143" starttime="20171114 16:50:50.698"></status>
+<doc>TC1344: Create a message, label, change it, delete the label and message
+https://testrail.a1qa.com/index.php?/cases/view/1344&amp;group_by=cases:section_id&amp;group_id=1295&amp;group_order=asc</doc>
+<status status="FAIL" endtime="20171120 15:25:50.367" starttime="20171120 15:25:42.263"></status>
 </suite>
 <statistics>
 <total>
@@ -228,7 +21,7 @@ https://testrail.a1qa.com/index.php?/cases/view/1362&amp;group_by=cases:section_
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="TC 1362" pass="0">TC 1362</stat>
+<stat fail="1" id="s1" name="TC 1344" pass="0">TC 1344</stat>
 </suite>
 </statistics>
 <errors>

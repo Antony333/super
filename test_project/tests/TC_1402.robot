@@ -5,6 +5,8 @@ Library  ../steps/ThreadsSteps.py
 Library  ../steps/UsersMessagesSteps.py
 Variables  ../configurations/gmail_data.py
 
+Test Timeout  15 min
+
 *** Variables ***
 
 

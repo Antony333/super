@@ -5,6 +5,7 @@ Library  ../steps/UsersMessagesSteps.py
 Library  ../steps/LabelsSteps.py
 Variables    ../configurations/test_data.py
 
+Test Timeout  15 min
 
 *** Variables ***
 ${user_id}        qacalendarapi@gmail.com

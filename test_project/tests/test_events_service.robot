@@ -1,6 +1,7 @@
 *** Settings ***
 Library  ../steps/EventsSteps.py
 Variables    ../../test_project/configurations/test_data.py
+Test Timeout  15 min
 
 *** Variables ***
 ${start_date}  2017-05-25T10:41:35

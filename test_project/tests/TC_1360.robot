@@ -4,6 +4,7 @@ Documentation   C1360: Create an attachemnt to the letter, send, delete
 Library    ../steps/UsersMessagesSteps.py
 Library    ../steps/AttachmentsStep.py
 
+Test Timeout  15 min
 
 *** Variables ***
 ${user_id}    qacalendarapi@gmail.com

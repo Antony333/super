@@ -4,6 +4,7 @@ Library  ../steps/EventsSteps.py
 Library  ../steps/UsersMessagesSteps.py
 Variables  ../configurations/gmail_data.py
 Variables  ../configurations/test_data.py
+Test Timeout  15 min
 
 *** Variables ***
 ${send_notifications}   True

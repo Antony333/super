@@ -1,5 +1,6 @@
 *** Settings ***
 Library  ../steps/EventsSteps.py
+Test Timeout  15 min
 
 *** Test Cases ***
 Events Test

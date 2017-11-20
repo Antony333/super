@@ -3,6 +3,7 @@ Documentation  Google Calendar API: Calendars test
 ...
 Library  ../steps/CalendarsSteps.py
 
+Test Timeout  15 min
 
 *** Test Cases ***
 Calendar insert

@@ -4,6 +4,7 @@ Documentation    C1362: Create, get, list, delete from settingsFilters
 Library    ../steps/SettingsFiltersSteps.py
 Library    ../steps/LabelsSteps.py
 
+Test Timeout  15 min
 
 *** Variables ***
 ${user_id}          qacalendarapi@gmail.com

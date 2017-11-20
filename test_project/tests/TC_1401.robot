@@ -4,6 +4,7 @@ Documentation   C1401: Create, update, delete an account for "Send as"
 Library    ../steps/SendAsSteps.py
 Variables  ../configurations/gmail_data.py
 
+Test Timeout  15 min
 
 *** Variables ***
 ${user_added_allias}    test2

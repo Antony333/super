@@ -3,6 +3,7 @@ Documentation    C1375: Get and update POP settings, Imap, auto-forwarding, vaca
 ...   https://testrail.a1qa.com/index.php?/cases/view/1375&group_by=cases:section_id&group_id=1295&group_order=asc
 Library  ../steps/GmailSettingsSteps.py
 
+Test Timeout  15 min
 
 *** Variables ***
 ${user_id}    qacalendarapi@gmail.com

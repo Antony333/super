@@ -1,6 +1,7 @@
 *** Settings ***
 Library    ../steps/UsersMessagesSteps.py
 Variables    ../configurations/test_data.py
+Test Timeout  15 min
 
 *** Variables ***
 ${user_id}    qacalendarapi@gmail.com

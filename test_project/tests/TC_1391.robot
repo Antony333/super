@@ -6,6 +6,7 @@ Library    ../steps/ThreadsSteps.py
 Library    ../steps/HistorySteps.py
 Variables    ../configurations/gmail_data.py
 
+Test Timeout  15 min
 
 *** Test Cases ***
 Display information about creating and deleting messages in history

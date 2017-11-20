@@ -5,6 +5,7 @@ Library     ../steps/ForwardingSteps.py
 Library     ../steps/UsersMessagesSteps.py
 Variables   ../configurations/gmail_data.py
 
+Test Timeout  15 min
 
 *** Variables ***
 ${file_name}   test.txt

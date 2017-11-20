@@ -4,6 +4,8 @@ Library    ../steps/CalendarListSteps.py
 Library    ../steps/CalendarsSteps.py
 Variables    ../configurations/test_data.py
 
+Test Timeout  15 min
+
 *** Test Cases ***
 Life Cycle Calendar List
 

@@ -4,6 +4,8 @@ Library    ../steps/CalendarListSteps.py
 Library    ../steps/CalendarsSteps.py
 Variables  ../configurations/test_data.py
 
+Test Timeout  15 min
+
 *** Test Cases ***
 Insert Calendar List Test
     ${calendar_list_model} =    Create Random Calendar List Model    ${calendar_id}
